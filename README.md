@@ -42,4 +42,3 @@ GPUS_STR="2 3 4 5 6 7" PYTHON_BIN=/path/to/python bash run_completion_sweep.sh
 Completion v1 的 C050 在六数据集等权 Best ACC 上相对 B0 下降 **0.0267**，五个数据集的均值下降，六个数据集均未通过预设非劣门槛。早期 BSSAT 对 Best ACC 有增益，但其指标与训练后段存在取舍。质量调制与 RADG 的已测版本没有进入正式方法。具体证据和下一步验证项目见[项目进展与结果](docs/项目进展与结果_20260928.md)。
 
 此仓库保存实验状态，不将待验证方案写成已证实的改进。
-

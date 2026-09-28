@@ -7,3 +7,8 @@
 *.md text eol=lf
 *.txt text eol=lf
 *.png binary
+
+# The source snapshot contains a mix of LF and CRLF. Preserve those bytes so
+# the published files match the experiment's source_sha256.json exactly.
+FRSIMVC-code/*.py -text -eol
+FRSIMVC-code/**/*.py -text -eol
