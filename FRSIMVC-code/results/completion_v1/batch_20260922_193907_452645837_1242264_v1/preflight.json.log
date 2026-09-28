@@ -1,0 +1,10 @@
+Validation OK: dataset=Augsburg, device=cuda:2, missing_mode=random, missing_rate=0.3, missing_seed=0, tau=0.5, ablation=A3, graph_beta=0.5, sinkhorn_epsilon=0.1, bssat_dual=True, bssat_balanced=True, mass_uniform_alpha=0.0, reliability_adaptive_graph=False, radg_beta=(0.2, 0.8), radg_edge_reliability=geometric_mean, deterministic_mode=False, drop_nonpositive=False, completion_enabled=True, completion_stage=inference_only, completion_lambdas=[0.25, 0.5, 0.75, 1.0], completion_arms=['B0', 'E0', 'G0', 'D0', 'C025', 'C050', 'C075', 'C100'], adapter_seed=20260922, diagnostic_epochs=[100, 200, 300]
+  /home/ubuntu/Tangzl/NEW_ICMVC/dataset/mv/Augsburg/data_HS_LR.mat
+  /home/ubuntu/Tangzl/NEW_ICMVC/dataset/mv/Augsburg/data_SAR_HR.mat
+  /home/ubuntu/Tangzl/NEW_ICMVC/dataset/mv/Augsburg/data_DSM.mat
+  /home/ubuntu/Tangzl/NEW_ICMVC/dataset/mv/Augsburg/gt.mat
+  GPU: NVIDIA GeForce RTX 3090
+
+========================================================================
+Running dataset: Augsburg
+========================================================================

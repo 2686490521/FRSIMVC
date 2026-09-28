@@ -1,0 +1,15 @@
+{
+  "batch_id": "20260922_193907_452645837_1242264",
+  "run_tag": "v1",
+  "hostname": "tzl",
+  "user": "ubuntu",
+  "python": "3.8.20",
+  "torch": "2.4.1+cu118",
+  "cuda_version": "11.8",
+  "cudnn": "90100",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "pytorch_cuda_alloc_conf": "expandable_segments:True",
+  "deterministic_mode": "false",
+  "timezone": "CST +0800"
+}

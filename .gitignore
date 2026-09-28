@@ -1,0 +1,31 @@
+# Local environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Raw datasets, trained weights, and bulky intermediate tensors
+FRSIMVC-code/data/
+FRSIMVC-code/datasets/
+**/checkpoints/
+**/visualizations/
+*.mat
+*.pth
+*.pt
+*.npy
+*.npz
+
+# Scratch exports and local tooling
+completion_export.tar.gz
+.work/
+
+# New launcher output should be reviewed before publication
+FRSIMVC-code/nohup.out
+FRSIMVC-code/results/**/_batches/
+FRSIMVC-code/results/**/_launches/
+FRSIMVC-code/results/**/console.log
