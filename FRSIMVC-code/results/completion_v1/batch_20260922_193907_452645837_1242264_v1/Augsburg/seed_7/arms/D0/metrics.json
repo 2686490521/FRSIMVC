@@ -1,0 +1,13 @@
+{
+  "round": 109,
+  "ACC": 0.5357142857142857,
+  "Kappa": 0.3430209005988216,
+  "NMI": 0.20904217826209737,
+  "ARI": 0.17443202614771494,
+  "PURITY": 0.5607142857142857,
+  "method_stage": "completion_v1",
+  "arm": "D0",
+  "best_round": 109,
+  "num_active_nodes": 840,
+  "num_gt_classes": 7
+}

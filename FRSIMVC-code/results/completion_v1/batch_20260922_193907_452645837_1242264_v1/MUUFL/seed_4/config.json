@@ -1,0 +1,215 @@
+{
+  "data_root": "/home/ubuntu/Tangzl/NEW_ICMVC/dataset/mv",
+  "datasets_to_run": [
+    "Trento"
+  ],
+  "Trento": {
+    "mm_data_path": [
+      "Trento/Trento.mat",
+      "Trento/Trento_lidar.mat"
+    ],
+    "gt_path": "Trento/Trento_gt.mat",
+    "rgb": [
+      30,
+      13,
+      1
+    ],
+    "n_pc": 8,
+    "pca_all_views": false,
+    "patch_size": 9,
+    "n_neighbors": 45,
+    "n_superpixels": 4000,
+    "lambda_1": 0.1,
+    "lambda_2": 0.1
+  },
+  "Augsburg": {
+    "mm_data_path": [
+      "Augsburg/data_HS_LR.mat",
+      "Augsburg/data_SAR_HR.mat",
+      "Augsburg/data_DSM.mat"
+    ],
+    "gt_path": "Augsburg/gt.mat",
+    "rgb": null,
+    "n_pc": 8,
+    "pca_all_views": false,
+    "patch_size": 9,
+    "n_neighbors": 50,
+    "n_superpixels": 2000,
+    "lambda_1": 0.1,
+    "lambda_2": 0.1
+  },
+  "MUUFL": {
+    "mm_data_path": [
+      "MUUFL/HSI.mat",
+      "MUUFL/LiDAR.mat"
+    ],
+    "gt_path": "MUUFL/gt.mat",
+    "rgb": null,
+    "n_pc": 8,
+    "pca_all_views": false,
+    "patch_size": 9,
+    "n_neighbors": 35,
+    "n_superpixels": 3000,
+    "lambda_1": 0.1,
+    "lambda_2": 0.1
+  },
+  "MDAS": {
+    "mm_data_path": [
+      "MDAS/MDAS-Sub1-HSI.mat",
+      "MDAS/MDAS-Sub1-MSI.mat",
+      "MDAS/MDAS-Sub1-SAR.mat",
+      "MDAS/MDAS-Sub1-DSM.mat"
+    ],
+    "gt_path": "MDAS/MDAS-Sub1-GT.mat",
+    "rgb": null,
+    "n_pc": 8,
+    "pca_all_views": false,
+    "patch_size": 9,
+    "n_neighbors": 25,
+    "n_superpixels": 2000,
+    "lambda_1": 0.1,
+    "lambda_2": 0.1
+  },
+  "Salinas": {
+    "mm_data_path": [
+      "Salinas/Salinas.mat",
+      "Salinas/Salinas_EMP.mat",
+      "Salinas/Salinas_LBP.mat",
+      "Salinas/Salinas_gabor.mat"
+    ],
+    "gt_path": "Salinas/Salinas_gt.mat",
+    "rgb": null,
+    "n_pc": 8,
+    "pca_all_views": false,
+    "patch_size": 9,
+    "n_neighbors": 25,
+    "n_superpixels": 2500,
+    "lambda_1": 0.1,
+    "lambda_2": 0.1
+  },
+  "XuZhou": {
+    "mm_data_path": [
+      "XuZhou/XuZhou.mat",
+      "XuZhou/XuZhou_EMP.mat",
+      "XuZhou/XuZhou_LBP.mat",
+      "XuZhou/XuZhou_gabor.mat"
+    ],
+    "gt_path": "XuZhou/XuZhou_gt.mat",
+    "rgb": null,
+    "n_pc": 8,
+    "pca_all_views": false,
+    "patch_size": 9,
+    "n_neighbors": 25,
+    "n_superpixels": 5000,
+    "lambda_1": 0.1,
+    "lambda_2": 0.1
+  },
+  "seed": 4,
+  "method_stage": "V5",
+  "ablation_variant": "A3",
+  "mask_aware": true,
+  "spatial_graph": true,
+  "csata_alignment": true,
+  "global_consensus": true,
+  "mask_aware_loss": true,
+  "mask_aware_eval": true,
+  "drop_nonpositive_labels": false,
+  "missing_mode": "random",
+  "missing_rate": 0.3,
+  "missing_seed": 4,
+  "superpixel_observed_threshold": 0.5,
+  "ensure_node_coverage": true,
+  "reference_view": 0,
+  "missing_params": {
+    "patch_scale": [
+      0.03,
+      0.07
+    ],
+    "block_scale_h": [
+      0.1,
+      0.3
+    ],
+    "block_scale_w": [
+      0.1,
+      0.3
+    ],
+    "irregularity": 0.25,
+    "strip_width_scale": [
+      0.03,
+      0.09
+    ],
+    "strip_orientation": "auto",
+    "strip_layout": "periodic"
+  },
+  "graph_beta": 0.5,
+  "spatial_signature_dim": 16,
+  "sinkhorn_epsilon": 0.1,
+  "sinkhorn_iterations": 100,
+  "global_anchor_momentum": 0.0,
+  "mass_uniform_alpha": 0.0,
+  "reliability_adaptive_graph": false,
+  "radg_mode": "centered",
+  "radg_beta_min": 0.2,
+  "radg_beta_max": 0.8,
+  "radg_base_beta": 0.5,
+  "radg_gamma": 0.5,
+  "radg_beta_floor": 0.2,
+  "radg_beta_ceiling": 0.8,
+  "radg_center_tolerance": 0.005,
+  "radg_edge_reliability": "geometric_mean",
+  "deterministic_mode": false,
+  "completion_enabled": true,
+  "completion_stage": "inference_only",
+  "completion_lambdas": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "completion_arms": [
+    "B0",
+    "E0",
+    "G0",
+    "D0",
+    "C025",
+    "C050",
+    "C075",
+    "C100"
+  ],
+  "adapter_seed": 20260922,
+  "diagnostic_seed": 100000,
+  "diagnostic_epochs": [
+    100,
+    200,
+    300
+  ],
+  "completion_min_valid_mass": 0.5,
+  "completion_save_probabilities": false,
+  "numerical_eps": 1e-12,
+  "csata_dual_signature": true,
+  "csata_balanced": true,
+  "lambda_spatial": 1.0,
+  "lambda_semantic": 1.0,
+  "lambda_reconstruction": 1.0,
+  "lambda_consensus": 1.0,
+  "dataset_name": "MUUFL",
+  "gpu_id": "4",
+  "lr": 0.0001,
+  "weight_decay": 1e-05,
+  "remove_bkg": true,
+  "algorithm": "FedAvg",
+  "local_epochs": 1,
+  "n_epoches": 300,
+  "model_name": "IGAE",
+  "gae_n_enc_1": 128,
+  "gae_n_enc_2": 256,
+  "gae_n_enc_3": 512,
+  "gae_n_dec_1": 512,
+  "gae_n_dec_2": 256,
+  "gae_n_dec_3": 128,
+  "save_model": true,
+  "continue_on_round_error": false,
+  "result_path": "./results/protocol",
+  "config_dir": "/home/ubuntu/Tangzl/FRSIMVC/FRSIMVC/FRSIMVC-code",
+  "run_dir": "/home/ubuntu/Tangzl/FRSIMVC/FRSIMVC/FRSIMVC-code/results/completion_v1/batch_20260922_193907_452645837_1242264_v1/MUUFL/seed_4"
+}

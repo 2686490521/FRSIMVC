@@ -1,0 +1,26 @@
+{
+  "n_views": 2,
+  "n_nodes": 1856,
+  "n_clusters": 11,
+  "adapter_seed": 20260922,
+  "diagnostic_seed": 100000,
+  "completion_lambdas": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "completion_arms": [
+    "B0",
+    "E0",
+    "G0",
+    "D0",
+    "C025",
+    "C050",
+    "C075",
+    "C100"
+  ],
+  "completion_stage": "inference_only",
+  "min_valid_mass": 0.5,
+  "numerical_eps": 1e-12
+}
